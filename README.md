@@ -11,6 +11,7 @@ CONTACTS.JS
 -uporabljam <a> namesto Link a je to kul zard Reacta
 -jst bi te Contactse lovil z visino tako kot pri Navv. Ko Contactsi in About dosezeta isto visino Unset-aj Contactse (da ne gre cez besedilo)
 -importam jih iz Data in shranim v useState
+-z useEffectom spreminjam class attrb. To mi overwrita kar mam v styled. Pomoje ni kul. 
 
 
 
@@ -18,12 +19,12 @@ CONTACTS.JS
 TO DO
 1. 464 - 744
 DONE-Title zmanjsat
--contact ikone (prekrivajo About)
+DONE-contact ikone (prekrivajo About)
 2. 744 - 1024
 DONE-Title zmanjsat
--contact ikone (prekrivajo About)
-3. > 1024
--contact icone (prekrivajo About)
+DONE-contact ikone (prekrivajo About)
+3. vecje od 1024
+DONE-contact icone (prekrivajo About)
 
 4. DONE premakni nav styling iz App.css v App.js
 5. DONE daj ves kontent v variable in jih premakni v svoj file
@@ -34,5 +35,3 @@ DONE-Title zmanjsat
 9. create pages - react router
 10. add gallery
 11. in music page add Demo section z muziko iz kompa (not youtube links)
-
-when it hits the same heiht as about - unset

@@ -11,7 +11,7 @@ export default function Navv() {
       const height = Math.round(
         (event.target.scrollTop / window.innerHeight) * 100
       );
-      console.log(height);
+      //console.log(height);
       if (height > 150) {
         setSelectedNavItem("band");
       } else if (height > 75) {

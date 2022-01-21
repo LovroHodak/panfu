@@ -32,7 +32,7 @@ const TitlePanfu = styled.section`
         font-size: 80px;
         transform: translateY(0);
       }
-      @media screen and (max-width: 1024px) and (min-width: 465px){
+      @media screen and (max-width: 1024px) and (min-width: 465px) {
         font-size: 140px;
         transform: translateY(0);
       }
@@ -47,7 +47,7 @@ const TitlePanfu = styled.section`
         font-size: 24px;
         transform: translateY(0);
       }
-      @media screen and (max-width: 1024px) and (min-width: 465px){
+      @media screen and (max-width: 1024px) and (min-width: 465px) {
         font-size: 48px;
         transform: translateY(0);
       }

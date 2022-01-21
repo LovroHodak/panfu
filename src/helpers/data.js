@@ -28,7 +28,7 @@ export const contacts = [
     name: "ytIcon",
   },
   {
-    link: "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=hodak.lovro@gmail.com&su=PANFU",
+    link: "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=peter.djokic@gmail.com&su=PANFUwebPage",
     image: gmIcon,
     name: "gmIcon",
   },
@@ -37,13 +37,13 @@ export const contacts = [
 // SONGS
 export const panfuSongs = [
   {
-    title: "Mlada dama",
-    image: mladaDama,
+    title: "This moment",
+    image: thisMoment,
     videoElement: (
       <iframe
         width="100%"
         height="100%"
-        src="https://www.youtube.com/embed/gDR_qBWy2hA"
+        src="https://www.youtube.com/embed/SqIHGVdO2aQ"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -52,13 +52,13 @@ export const panfuSongs = [
     ),
   },
   {
-    title: "This moment",
-    image: thisMoment,
+    title: "Mlada dama",
+    image: mladaDama,
     videoElement: (
       <iframe
         width="100%"
         height="100%"
-        src="https://www.youtube.com/embed/SqIHGVdO2aQ"
+        src="https://www.youtube.com/embed/gDR_qBWy2hA"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
