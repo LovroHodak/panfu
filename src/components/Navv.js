@@ -5,6 +5,7 @@ import { navbarItems } from "../helpers/data";
 
 export default function Navv() {
   const [selectedNavItem, setSelectedNavItem] = useState("home");
+  const [hrefLink, setHrefLink] = useState("/");
 
   useEffect(() => {
     const onScroll = (event) => {
@@ -24,10 +25,12 @@ export default function Navv() {
     };
 
     document.getElementById("root").addEventListener("scroll", onScroll);
-    
+
     return () =>
       document.getElementById("root").removeEventListener("scroll", onScroll);
   }, []);
+
+
 
   return (
     <NavPanfu>
@@ -35,7 +38,7 @@ export default function Navv() {
         {navbarItems.map((item, i) => {
           return (
             <li data-selected={item === selectedNavItem} key={i}>
-              {item}
+              <a href={hrefLink}>{item}</a>
             </li>
           );
         })}
@@ -73,6 +76,13 @@ const NavPanfu = styled.nav`
       opacity: 0.8;
       @media screen and (max-width: 464px) {
         font-size: 1rem;
+      }
+      & > a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        height: 100%;
       }
     }
     & > li[data-selected="true"] {

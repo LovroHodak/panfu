@@ -32,6 +32,10 @@ DONE-contact icone (prekrivajo About)
 7. DONE add Links (yt, fb, gm)
 8. DONE dodaj ostale vide+slikce
 
+9. create a provider and send all data from there
 9. create pages - react router
 10. add gallery
 11. in music page add Demo section z muziko iz kompa (not youtube links)
+12. navbar Links - moram napisat funkcijo da me '/home' pelje na '/'
+13. add Gallery to navbar
+14. contact page z implementiranim mejlom

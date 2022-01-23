@@ -32,7 +32,7 @@ export default function Songs() {
   const [selectedSong, setSelectedSong] = useState();
 
   return (
-    <SongsPanfu>
+    <SongsContainer>
       <Carousel responsive={responsive}>
         {youtubePanfu.map((song, i) => {
           return (
@@ -49,11 +49,11 @@ export default function Songs() {
           );
         })}
       </Carousel>
-    </SongsPanfu>
+    </SongsContainer>
   );
 }
 
-const SongsPanfu = styled.section`
+const SongsContainer = styled.section`
   padding: 5vh 0;
 `;
 
@@ -84,6 +84,7 @@ const SongItemPanfu = styled.div`
     transform: translate(-50%, 50%);
     background-color: #00000099;
     padding: 8px 32px;
+    text-align: center;
   }
   & iframe {
     position: absolute;
