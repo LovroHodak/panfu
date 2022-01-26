@@ -39,3 +39,9 @@ DONE-contact icone (prekrivajo About)
 12. navbar Links - moram napisat funkcijo da me '/home' pelje na '/'
 13. add Gallery to navbar
 14. contact page z implementiranim mejlom
+15. na telefonu mi navbar pozre
+16. na iphonu navbar nabije skupi
+17. razdeli fotke v mape na strani
+18. coda je porinjena na github pa vseen pages ne delajo
+19. backend
+20. 
