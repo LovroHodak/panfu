@@ -45,3 +45,6 @@ DONE-contact icone (prekrivajo About)
 18. coda je porinjena na github pa vseen pages ne delajo
 19. backend
 20. 
+
+
+namest providerjev react-query library, hooks: use-query, use mutation

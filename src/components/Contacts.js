@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
+import { useSocial } from "../hooks/use-social";
 
 import { contacts } from "../helpers/data";
 
-
 export default function Contacts() {
+  const { socialLinks, error } = useSocial();
   const [social] = useState(contacts);
 
-  const [changePosition, setChangePosition] = useState('sticky')
-
+  const [changePosition, setChangePosition] = useState("sticky");
 
   useEffect(() => {
     const onScroll = (event) => {
@@ -17,21 +17,23 @@ export default function Contacts() {
       );
       console.log(height);
       if (height > 165) {
-        setChangePosition('unset')
+        setChangePosition("unset");
       } else {
-        setChangePosition('sticky')
+        setChangePosition("sticky");
       }
     };
 
     document.getElementById("root").addEventListener("scroll", onScroll);
-    
+
     return () =>
       document.getElementById("root").removeEventListener("scroll", onScroll);
   }, []);
 
+  if (error) return <code>{error}</code>;
+
   return (
-    <ContactsIcons style={{position: changePosition}}>
-      {social.map((soc, i) => {
+    <ContactsIcons style={{ position: changePosition }}>
+      {socialLinks.map((soc, i) => {
         return (
           <div key={i}>
             <a href={soc.link} target="blank">
